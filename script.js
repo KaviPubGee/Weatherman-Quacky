@@ -42,13 +42,13 @@ checkWeather("Colombo");
 function setWeatherVideo(weather) {
     const video = document.getElementById("bgVideo");
 
-    let newSrc = "sunny.mp4";
+    let newSrc = "./videos/sunny.mp4";
 
     if (weather.includes("Rain")) {
-        newSrc = "rain.mp4";
+        newSrc = "./videos/rain.mp4";
     } 
     else if (weather.includes("Clouds")) {
-        newSrc = "clouds.mp4";
+        newSrc = "./videos/clouds.mp4";
     } 
 
     video.src = newSrc;
@@ -60,12 +60,12 @@ function setDuck(weather) {
     const duck = document.getElementById("duck");
 
     if (weather.includes("Rain")) {
-        duck.src = "duck_raincoat.png";
+        duck.src = "./images/duck_raincoat.png";
     } 
     else if (weather.includes("Clouds")) {
-        duck.src = "duck_cloud.png";
+        duck.src = "./images/duck_cloud.png";
     } 
     else{
-        duck.src = "duck_sun.png";
+        duck.src = "./images/duck_sun.png";
     }
 }
