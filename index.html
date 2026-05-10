@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Weatherman Quacky</title>
+</head>
+<body>
+    <div class="heading">
+        <h1>Welcome</h1>
+        <h2>Let Quacky Tell The Weather</h2>
+    </div>
+
+    <div class="container">
+        <div class="weather">
+
+            <img src="images.png" alt="Quacky" class="duck">
+
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">Sri Lanka</h2>
+
+            <div class="details">
+                <div class="col">
+                    <i class="bx bx-water"></i>
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <i class="bx bx-wind"></i>
+                    <div>
+                        <p class="wind">5 Km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search">
+            <input id="city" type="text" placeholder="Enter city name" spellcheck="false">
+            <button id="btn">
+                <i class="bx bx-search"></i>
+            </button>
+        </div>
+    </div>
+    <script src="config.js" defer></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
